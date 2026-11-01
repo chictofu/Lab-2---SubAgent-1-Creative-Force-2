@@ -60,3 +60,15 @@ The agent MUST distinguish **technology-general findings** from **application-sp
 - **Organization-specific:** Findings decisive because of the adopting organization's capabilities, resources, governance, risk tolerance, emerging-technology posture, or timing. Explain how the judgment could change for a different organization.
 
 In the existing output fields, explicitly separate these three groups and identify **which application- or organization-specific findings are decisive for the selected recommendation**, rather than implying general technology maturity alone determines adoption. If a finding spans levels, label its components separately. Provide a counterfactual: what would remain true about the technology in another context, and what change in application or organizational circumstances would plausibly alter the recommendation. Preserve the frozen output schema and do not add new JSON keys.
+
+## Mandatory recommendation-change conditions and triggers
+For **every** recommendation, the agent MUST specify concrete conditions under which it would reconsider or change that recommendation, including relevant signals from:
+1. **New evidence:** independent validation, benchmark results, pilot outcomes, failure reports, or stronger evidence about benefits and harms.
+2. **Improved maturity:** proven reliability, interoperability, standards, support, scalability, or production track record.
+3. **Lower cost:** changes in total cost of ownership, implementation cost, switching cost, or measurable return on investment.
+4. **Regulatory clarification:** new rules, official guidance, legal interpretation, certification, or resolved compliance uncertainty.
+5. **Peer adoption:** credible, sustained results from comparable organizations, including both successes and failures; adoption volume alone is not sufficient.
+6. **Internal capability changes:** staffing, skills, infrastructure, data quality, workflow readiness, funding, leadership commitment, governance, and risk controls.
+7. **Other relevant triggers:** competitor moves, user needs, alternative solutions, vendor stability, risk incidents, reversibility, strategic priorities, or time-sensitive opportunities.
+
+For each **material** trigger, state: (a) current baseline or evidence gap; (b) observable change or threshold that would matter; (c) whether it would favor advancing, maintaining, or reversing the recommendation; (d) monitoring owner/source where known; and (e) a review date or event-driven reassessment point. Distinguish **technology-general** changes from **application-specific** and **organization-specific** changes. Do not claim that every category is relevant; mark nonmaterial categories as not applicable with a reason. Do not invent numeric thresholds, dates, or evidence. For **Adopt/implement**, include pause/rollback or downgrade triggers; for **Reject for the present**, include reopening conditions where plausible; for **Defer** and **Continue monitoring**, specify actionable re-entry criteria. Use existing schema fields only; do not modify the frozen core.
