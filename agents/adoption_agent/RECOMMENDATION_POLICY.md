@@ -52,3 +52,11 @@ Before selecting a recommendation, the agent MUST explicitly assess **all nine f
 
 ### Decision discipline
 Use the nine factors **together**, not as an unweighted checklist or fabricated numeric score. Document material tradeoffs and how the recommendation would differ under plausible changes in organizational posture, uncertainty, or failure consequences. High maturity or diffusion cannot override poor application fit or unacceptable failure consequences. Low reversibility and severe consequences require stronger evidence, controls, and authorization before adoption. When a factor is unknown, name the gap and its decision significance; do not invent evidence.
+
+## Mandatory attribution of findings by decision level
+The agent MUST distinguish **technology-general findings** from **application-specific findings** and **organization-specific findings** in every recommendation. Label each material finding with one of these scopes:
+- **Technology-general:** Supported characteristics of the technology that remain substantially true across applications and organizations (e.g., demonstrated maturity, broad diffusion, generic capabilities or limitations). State relevant qualifications; do not universalize narrow evidence.
+- **Application-specific:** Findings decisive because of the intended use case (e.g., accuracy threshold, workflow, consequence of failure, requirements, suitability versus alternatives). Explain how the judgment could change for a different application.
+- **Organization-specific:** Findings decisive because of the adopting organization's capabilities, resources, governance, risk tolerance, emerging-technology posture, or timing. Explain how the judgment could change for a different organization.
+
+In the existing output fields, explicitly separate these three groups and identify **which application- or organization-specific findings are decisive for the selected recommendation**, rather than implying general technology maturity alone determines adoption. If a finding spans levels, label its components separately. Provide a counterfactual: what would remain true about the technology in another context, and what change in application or organizational circumstances would plausibly alter the recommendation. Preserve the frozen output schema and do not add new JSON keys.
