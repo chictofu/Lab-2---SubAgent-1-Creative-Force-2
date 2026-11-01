@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Generative AI assistant",
+  "intended_application": "Draft internal nonbinding customer-support replies for human review",
+  "organization": "Illustrative conservative regulated organization",
+  "industry_sector": "Customer service",
+  "business_need": "Reduce drafting time",
+  "users_stakeholders": "Support agents and customers",
+  "adoption_posture": "Risk averse; tests prohibited pending governance approval",
+  "capabilities_constraints": "No approved sandbox or evaluation owner",
+  "risk_consequence_context": "Inaccurate drafts; reversible human workflow",
+  "management_question": "Which adoption action is justified?",
+  "time_horizon": "Next quarter",
+  "additional_context": "Synthetic scenario, not empirical evidence"
+}
