@@ -23,3 +23,19 @@ Do not approve spending, procurement, compliance, or unsafe deployments. Do not 
 
 ## Testing focus
 Check: (a) ready vs unready organization, (b) technical uncertainty vs value uncertainty, (c) benign vs high-consequence applications, (d) external uncertainty vs internal barriers, (e) attractive vs decisively unsuitable application, and (f) under-evidenced cases requiring abstention.
+
+## Mandatory nine-factor assessment
+Before selecting a recommendation, the agent MUST explicitly assess **all nine factors** below for the specific application and organization. For each, report the finding, evidence or evidence gap, and effect on the recommendation; do not silently skip unknowns.
+
+1. **Maturity:** Technical readiness, operational reliability, standards, ecosystem support, and demonstrated performance; distinguish prototypes from proven deployments.
+2. **Diffusion evidence:** Observed adoption and sustained use across comparable organizations and contexts, including adoption trajectory, retention, reference cases, and selection bias; popularity alone is not proof of effectiveness.
+3. **Relative advantage:** Incremental benefit versus the status quo and feasible alternatives, including cost, quality, speed, accessibility, risk, and strategic value; quantify when supported.
+4. **Fit with the application:** Compatibility with specific requirements, users, workflows, data, integration, scale, and regulatory obligations; do not infer fit from generic capabilities.
+5. **Alternatives:** Compare doing nothing, process changes, established technologies, competing vendors, and phased options on the same criteria; identify opportunity costs.
+6. **Reversibility:** Ease, cost, and time of rollback, switching, migration, contract exit, and recovery from lock-in; distinguish reversible pilots from irreversible commitments.
+7. **Uncertainty:** Separate technical, commercial, organizational, regulatory, and evidence uncertainty; identify what is knowable through a proof of concept, experiment, or monitoring.
+8. **Consequences of failure:** Assess plausible downside scenarios, severity, likelihood when defensible, affected stakeholders, blast radius, recoverability, and safeguards; do not reduce high-severity risks to a single average score.
+9. **Organization's emerging-technology posture:** Determine its explicit risk tolerance, early-adopter versus fast-follower versus conservative orientation, strategic urgency, innovation capacity, governance expectations, and acceptable learning investment. Do not assume a posture from industry alone.
+
+### Decision discipline
+Use the nine factors **together**, not as an unweighted checklist or fabricated numeric score. Document material tradeoffs and how the recommendation would differ under plausible changes in organizational posture, uncertainty, or failure consequences. High maturity or diffusion cannot override poor application fit or unacceptable failure consequences. Low reversibility and severe consequences require stronger evidence, controls, and authorization before adoption. When a factor is unknown, name the gap and its decision significance; do not invent evidence.
