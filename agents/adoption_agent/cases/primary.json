@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Generative AI language-model assistant",
+  "intended_application": "Draft internal, nonbinding customer-support replies for human approval",
+  "organization": "Illustrative mid-sized service organization",
+  "industry_sector": "Customer service",
+  "business_need": "Reduce drafting time without increasing customer harm",
+  "users_stakeholders": "Support agents, customers, security and compliance teams",
+  "adoption_posture": "Pragmatic fast follower; permits controlled experimentation",
+  "capabilities_constraints": "Sandbox, privacy review, human approval, and measurement staff available; no autonomous sending",
+  "risk_consequence_context": "Potential hallucinations, privacy leakage, and misleading drafts; reversible with manual workflow",
+  "management_question": "What should management do now?",
+  "time_horizon": "Next quarter",
+  "additional_context": "Synthetic instructional scenario, not an assessment of a real organization. No observed pilot metrics supplied."
+}
